@@ -1,10 +1,8 @@
-import Counter from "@/components/Counter"
-
 function PostsLayout({ children }) {
 
   return (
     <>
-      <Counter />
+      <small>Home &bull; Posts</small>
       <section>
         { children }
       </section>
