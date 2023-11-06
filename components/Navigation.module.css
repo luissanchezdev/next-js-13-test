@@ -1,0 +1,4 @@
+.navigation {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
