@@ -14,20 +14,18 @@ async function postComment( { params } ) {
   const  comments = await fetchPostComments( id )
 
   return (
-    <>
+    <ul>
       {
-        comments.map( ({ name, body }) => {
+        comments.map( ({ name, body }, index) => {
           return (
-            <>
-              <div>
+              <li key={ index }>
                 <p className="text-center text-xl">{ name } </p>
                 <p className="my-2">{ body }</p>
-              </div>
-            </>
+              </li>
           )
           })
       }
-    </>
+    </ul>
   )
 }
 
