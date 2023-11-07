@@ -3,7 +3,8 @@ const nextConfig = {
     images: {
         domains: [
             'api.dicebear.com',
-            'i.pravatar.cc'
+            'i.pravatar.cc',
+            'via.placeholder.com'
         ]
     }
 };

@@ -17,10 +17,10 @@ async function LayoutPost( { children, params } ) {
 
   return (
     <>
-      <article>
-        <h2 className="text-center text-2xl">{ dataPost.title } </h2>
+      <article className=" container mx-auto">
+        <h2 className="my-2 text-xl text-sky-900">{ dataPost.title } </h2>
         <p className="my-2">{ dataPost.body }</p>
-        <Link href={`/posts/${ id }/comments`} > Ver commentarios </Link>
+        <Link href={`/posts/${ id }/comments`} className="my-2 block w-auto rounded-md bg-sky-700 p-2 text-white"> Ver comentarios </Link>
         { children }
       </article>
     </>

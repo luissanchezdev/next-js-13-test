@@ -17,9 +17,9 @@ async function ListOfPosts() {
   return (
     <>
       { allPosts.slice(0,5).map( ({ id, title, body }) => (
-        <article key={ id }>
+        <article key={ id } className="py-4">
           <Link href='/posts/[id]' as={`/posts/${id}`}>
-            <h2 className="text-xl text-sky-800">{ title }</h2>
+            <h2 className="py-2 text-xl text-sky-900">{ title }</h2>
             <p> { body } </p>
             <LikeButton id={ id }/>
           </Link>
