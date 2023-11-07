@@ -22,7 +22,7 @@ async function postComment( { params } ) {
       {
         comments.map( ({ name, body }, index) => {
           return (
-              <li key={ index } className="grid grid-cols-7 gap-2">
+              <li key={ index } className="grid grid-cols-7 gap-2 py-2">
                 <Image height={100} width={100}
   src={`https://i.pravatar.cc/300`}
   alt={`avatar`} className=" col-start-1 col-end-2"/>
