@@ -1,4 +1,5 @@
-const fetchPostComments = ( id ) => {
+const fetchPostComments = async ( id ) => {
+  await new Promise( resolve => setTimeout( resolve, 5000))
   // ISG
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
     next: {
