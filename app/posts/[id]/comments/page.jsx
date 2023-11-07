@@ -1,5 +1,6 @@
 const fetchPostComments = async ( id ) => {
   await new Promise( resolve => setTimeout( resolve, 5000))
+  // throw new Error('Error en la carga de comentarios')
   // ISG
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
     next: {
